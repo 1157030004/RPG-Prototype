@@ -1,0 +1,4 @@
+repository "RPG Combat Core@unity_1157030004@cloud"
+  path "/"
+    br "/main"
+    co "/main"
