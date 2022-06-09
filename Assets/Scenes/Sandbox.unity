@@ -262,6 +262,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2088960392}
     m_Modifications:
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 22e74536-74a7-494d-959e-74261652b3e3
+      objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -446,7 +450,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248723713}
-  m_LocalRotation: {x: -0.103109054, y: 0.24797311, z: 0.02655346, w: 0.96289814}
+  m_LocalRotation: {x: -0.103109054, y: 0.24797311, z: 0.026553458, w: 0.96289814}
   m_LocalPosition: {x: -1.8151207, y: 30.753883, z: -44.665016}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -484,7 +488,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.83225805, y: 1}
+    m_SensorSize: {x: 1.1718619, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -764,7 +768,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.83225805, y: 1}
+    m_SensorSize: {x: 1.1718619, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1677,6 +1681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1071887579}
     m_Modifications:
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: d60a49cd-2471-401b-92b1-d986327b25ca
+      objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -2168,6 +2176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1071887579}
     m_Modifications:
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 758d75e6-767f-4d43-8a16-eb44eced2c03
+      objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -2346,7 +2358,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.83225805, y: 1}
+    m_SensorSize: {x: 1.1718619, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2898,6 +2910,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1779565495}
     m_Modifications:
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 7cb47966-fbdd-4921-ad7e-b46352b518d1
+      objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -3191,6 +3207,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1779565495}
     m_Modifications:
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 42b8161c-3d3f-47f5-b533-d3e59a682893
+      objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -3251,6 +3271,10 @@ PrefabInstance:
     - target: {fileID: 121618085609235774, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 590482758452974578, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 43b41da3-add0-40d9-9fc1-a22b494cc05c
       objectReference: {fileID: 0}
     - target: {fileID: 4162597964407231914, guid: 4054ab00ba3a1f74690095856d36c4df, type: 3}
       propertyPath: m_Name
@@ -3993,6 +4017,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1328708192127704087, guid: 7ce8f32cd5fcfbd40a8c94ad09fe073f, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 6d7bf34d-3098-4650-84ff-d6e0c8f250e3
+      objectReference: {fileID: 0}
     - target: {fileID: 5312118586237891519, guid: 7ce8f32cd5fcfbd40a8c94ad09fe073f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -64.47551

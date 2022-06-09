@@ -16,10 +16,8 @@ namespace RPG.Saving
             print("Saving to " + path);
             using (FileStream stream = File.Open(path, FileMode.Create))
             {
-                Transform playerTransform = GetPlayerTransform();
                 BinaryFormatter formatter = new BinaryFormatter();
-                SerializableVector3 position = new SerializableVector3(playerTransform.position);
-                formatter.Serialize(stream, position);
+                formatter.Serialize(stream, CaptureState());
             }
         }
 
@@ -30,35 +28,28 @@ namespace RPG.Saving
 
             using (FileStream stream = File.Open(path, FileMode.Open))
             {
-                Transform playerTransform = GetPlayerTransform();
                 BinaryFormatter formatter = new BinaryFormatter();
-                SerializableVector3 position = (SerializableVector3)formatter.Deserialize(stream);
-                playerTransform.position = position.ToVector();
+                RestoreState(formatter.Deserialize(stream));
             }
-
         }
 
-        private Transform GetPlayerTransform()
+        private object CaptureState()
         {
-            return GameObject.FindGameObjectWithTag("Player").transform;
+            Dictionary<string, object> state = new Dictionary<string, object>();
+            foreach(SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
+            {
+                state[saveable.GetUniqueIdentifier()] =  saveable.CaptureState();
+            }
+            return state;
         }
 
-        byte[] SerializeVector(Vector3 vector)
+        private void RestoreState(object state)
         {
-            byte[] vectorBytes = new byte[12];
-            BitConverter.GetBytes(vector.x).CopyTo(vectorBytes, 0);
-            BitConverter.GetBytes(vector.y).CopyTo(vectorBytes, 4);
-            BitConverter.GetBytes(vector.z).CopyTo(vectorBytes, 8);
-            return vectorBytes;
-        }
-
-        Vector3 DeserializeVector(byte[] buffer)
-        {
-            Vector3 result = new Vector3();
-            result.x = BitConverter.ToSingle(buffer, 0);
-            result.y = BitConverter.ToSingle(buffer, 4);
-            result.z = BitConverter.ToSingle(buffer, 8);
-            return result;
+            Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
+            foreach(SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
+            {
+                saveable.RestoreState(stateDict[saveable.GetUniqueIdentifier()]);
+            }
         }
 
 

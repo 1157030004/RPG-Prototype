@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7797336372250975361, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9173290822167222946, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
       propertyPath: weaponDamage
       value: 10
@@ -75,18 +79,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6755645893570222809, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
   m_PrefabInstance: {fileID: 4034484901109812874}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4907060580347189531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7655484406698054739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7323f026f8f6524b87aedc4f77682fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &2052449384
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -101,6 +93,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4907060580347189531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7655484406698054739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7323f026f8f6524b87aedc4f77682fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5355286460060540531
 PrefabInstance:
   m_ObjectHideFlags: 0

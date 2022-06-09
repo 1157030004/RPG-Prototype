@@ -125,6 +125,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 7797336372250975361, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9117704666667957724, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
       propertyPath: m_Speed
       value: 3
@@ -197,6 +201,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   wayPointTolerance: 1
   wayPointDwellTime: 3
+  patrolSpeedFraction: 0.2
 --- !u!4 &6399534520624310512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4380826318157965187, guid: 9fd1e95607f8de54f851f367e59b1ea6, type: 3}
