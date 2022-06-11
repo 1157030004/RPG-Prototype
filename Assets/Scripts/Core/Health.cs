@@ -45,7 +45,6 @@ namespace RPG.Core
 
         public void RestoreState(object state)
         {
-            Debug.Log(state);
             healthPoints = (float)state;
             if(healthPoints <= 0)
             {
