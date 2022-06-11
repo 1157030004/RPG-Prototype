@@ -41,7 +41,7 @@ namespace RPG.Saving
             }
         }
 
-
+#if UNITY_EDITOR
         void Update()
         {
             if(Application.IsPlaying(gameObject)) return;
@@ -59,6 +59,7 @@ namespace RPG.Saving
 
             globalLookup[property.stringValue] = this;
         }
+#endif
 
         bool IsUnique(string candidate)
         {
